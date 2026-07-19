@@ -1,249 +1,432 @@
 # Verve N Veda
 
-**Compassionate, privacy-respecting resource hubs and learning tools for families, students, community helpers, and people seeking support.**
+**A sovereign, privacy-respecting sanctuary of learning, creativity, public resources, and conscious exploration.**
 
-Verve N Veda is a growing collection of free-access, browser-based public resource tools designed to help people find practical help, learn safely, and move through difficult moments with clarity. The project brings together national resource pathways, community education tools, and local-first web apps that can be used without accounts, tracking, or complicated setup.
+Verve N Veda is a growing public ecosystem of free-access resource hubs, educational portals, creative tools, news and weather spaces, community projects, and browser-based applications.
 
-The guiding purpose is simple:
+The project is designed to help people find trustworthy pathways, learn without unnecessary barriers, create with independence, and move forward with greater clarity.
 
-> Help people pause, learn, find resources, and take the next safe step.
+> **Pause. Learn. Verify. Find support. Create. Move forward with dignity.**
+
+---
+
+## Welcome
+
+The Verve N Veda landing page serves as the front door to the entire ecosystem. Its calm, sanctuary-inspired design connects visitors to community resources, learning environments, creative spaces, public-interest tools, and related projects.
+
+The landing page is built as a single self-contained `index.html` file using:
+
+- Semantic HTML
+- Modern CSS
+- Vanilla JavaScript
+- Inline SVG artwork
+- Native browser accessibility features
+
+It requires no framework, build system, database, account, analytics package, or external JavaScript dependency.
 
 ---
 
 ## Project Mission
 
-Verve N Veda exists to make helpful information easier to reach. Many people need support but do not know where to begin. A parent may be looking for food, child care, health care, school help, or utility support. A person experiencing homelessness may need shelter, documents, legal aid, mental health support, veteran services, or a local hotline. A student or community member may need digital safety education, scam-awareness tools, or a calm place to explore trusted resources.
+Verve N Veda exists to make practical help, education, truth-centered inquiry, and creative opportunity easier to reach.
 
-This repository is intended to support those needs through simple, portable, human-centered web tools.
+A parent may be searching for food, child care, school support, health services, or utility assistance. A veteran may need help locating benefits or community services. A person experiencing homelessness may need shelter, documents, legal aid, health care, or a safe first step. A student may need an accessible learning space. An artist may need tools to build, preserve, and share their work.
+
+Verve N Veda brings those pathways together through portable, human-centered web tools designed around dignity rather than surveillance.
 
 ---
 
-## Current Focus Areas
+## The Landing Page
 
-### Community Resource Hubs
+The root `index.html` includes:
 
-- **Verve N Veda Homeless Hub**  
-  A national resource directory for shelter, food, crisis help, health care, legal aid, documents, veterans, youth, domestic violence support, and local navigation.
+- A responsive welcome experience inspired by the Verve N Veda visual identity
+- An ivory, sage, charcoal, and muted-gold design system
+- An original botanical lotus motif
+- A searchable directory of Verve N Veda destinations
+- A keyboard-accessible slide-out navigation menu
+- Featured gateways for frequently visited spaces
+- Responsive desktop, tablet, and mobile layouts
+- Reduced-motion support
+- Clear focus states and large interactive targets
+- Automatic copyright-year display
+- External links to the wider Verve N Veda ecosystem
 
-- **Verve N Veda Family Resource Hub**  
-  A parent and caregiver support directory for child care, Head Start, SNAP, WIC, school meals, Medicaid, CHIP, housing, utilities, special education, safety hotlines, and family support services.
+The page directory and hamburger menu are generated from the same JavaScript destination list. A route only needs to be edited once for both navigation areas to update.
 
-### Digital Safety and Education
+---
 
-- **ARSHIF Atlas of Online Human Deception**  
-  A privacy-respecting learning portal for recognizing patterns that may appear in scams, coercion, impersonation, financial grooming, emotional manipulation, and social engineering.
+## Main Destinations
 
-- **Pattern Literacy Tools**  
-  Local-only educational tools that encourage people to pause, verify through trusted sources, and avoid acting under pressure.
+### Community and Support
 
-### Learning and Public Education
+- Family Hub
+- Veteran Hub
+- Homeless Hub
+- Senior Hub
+- LGBTQ+ Resources
+- One Nation for All
+- PLERA Live
 
-- Resource pathways connected to **Khaemenes Academy**
-- Public learning tools for students, parents, and community members
-- Free-access educational portals and printable support materials
+### News, Weather, and Public Awareness
+
+- The Verifier
+- News Engines
+- Weather
+- Kids News Network
+- River-to-Road
+
+### Learning and Research
+
+- Khaemenes Academy
+- ARSHIF
+- Firmament Law
+- Games
+- PLERA Search Gate
+
+### Art, Music, and Creation
+
+- Bazaar Art
+- Music Hall
+- Your Art Gallery
+- My Art Gallery
+- Professional Tools
+- Web Site Design
+- Editor
+
+### Reflection and Wellbeing
+
+- Journey Deeper
+- The First Hour
+- Sonic Sanctuary
+- Faith
+- Thyme to Mow
+
+---
+
+## Connected Sites
+
+- **Verve N Veda:** `https://www.vervenveda.com`
+- **Jennifer Pearl 2028:** `https://www.jenniferpearl2028.com`
+- **Khaemenes Academy:** `https://www.khaemenesacademy.org`
 
 ---
 
 ## Design Principles
 
-Verve N Veda tools are built with the following principles:
+### Sovereign by Design
 
-- **Local-first whenever possible** — tools should run in the browser without requiring accounts or servers.
-- **Privacy-respecting by default** — no hidden tracking, no unnecessary data collection, and no selling user data.
-- **Accessible and readable** — clear language, mobile-friendly layouts, strong contrast, and practical navigation.
-- **Non-accusatory safety design** — warning signals are presented as invitations to pause and verify, not as verdicts.
-- **Human dignity first** — resource tools should support people without shame, stigma, or unnecessary barriers.
-- **Portable and sovereign** — single-file or static web apps should be easy to download, preserve, host, and share.
+The core experience should remain portable, understandable, and independently hostable. Whenever practical, tools should function as static files without proprietary platforms or software lock-in.
+
+### Privacy-Respecting by Default
+
+The project avoids hidden tracking, unnecessary accounts, invasive profiling, and the collection of sensitive information. Browser storage may be used for clearly identified local preferences or saved work.
+
+### Human Dignity First
+
+Resource tools should help people without shame, stigma, accusation, or unnecessary barriers. Safety guidance should encourage pausing and verification rather than issuing unsupported verdicts.
+
+### Accessible and Readable
+
+Pages should use clear language, responsive layouts, strong contrast, keyboard-accessible controls, visible focus states, and practical navigation.
+
+### Calm Rather Than Overwhelming
+
+The interface should help visitors understand their choices and take the next useful step without being buried beneath visual noise.
+
+### Easy to Preserve and Share
+
+Single-file and static applications should be simple to download, archive, host, duplicate, and maintain.
 
 ---
 
-## Technology Stack
+## Technology
 
-The project is intentionally simple and portable.
-
-- HTML
-- CSS
-- Vanilla JavaScript
-- LocalStorage for optional local user preferences or saved items
-- Static hosting support through platforms such as Cloudflare Pages, Netlify, GitHub Pages, or similar static hosts
-
-No build system is required for the core tools unless future versions add optional advanced features.
-
----
-
-## Suggested Repository Structure
+The core project intentionally uses a small and durable web stack:
 
 ```text
-verve-n-veda/
-  README.md
-  LICENSE.md
-  THIRD_PARTY_NOTICES.md
-  SECURITY.md
-  CODE_OF_CONDUCT.md
-
-  apps/
-    homeless-hub/
-      index.html
-    family-resource-hub/
-      index.html
-    arshif-atlas/
-      index.html
-
-  assets/
-    images/
-    icons/
-    posters/
-
-  docs/
-    deployment.md
-    contributing.md
-    resource-review-policy.md
+HTML5
+CSS3
+Vanilla JavaScript
+Inline SVG
+LocalStorage when appropriate
+Static hosting
 ```
+
+The current landing page does not require:
+
+```text
+React
+Vue
+Angular
+Bootstrap
+jQuery
+Node.js
+npm
+A build pipeline
+A server-side database
+```
+
+---
+
+## Recommended Repository Structure
+
+The repository can use clean route folders so each public page resolves through a simple first-word URL.
+
+```text
+vervenveda.github.io/
+├── index.html
+├── README.md
+├── LICENSE.md
+├── THIRD_PARTY_NOTICES.md
+├── SECURITY.md
+├── CODE_OF_CONDUCT.md
+├── 404.html
+├── CNAME
+│
+├── homeless/
+│   └── index.html
+├── veterans/
+│   └── index.html
+├── family/
+│   └── index.html
+├── senior/
+│   └── index.html
+├── verifier/
+│   └── index.html
+├── weather/
+│   └── index.html
+├── kids/
+│   └── index.html
+├── arshif/
+│   └── index.html
+├── music/
+│   └── index.html
+├── faith/
+│   └── index.html
+├── games/
+│   └── index.html
+├── khaemenes/
+│   └── index.html
+│
+├── assets/
+│   ├── images/
+│   ├── icons/
+│   └── posters/
+│
+└── docs/
+    ├── deployment.md
+    ├── contributing.md
+    └── resource-review-policy.md
+```
+
+With this structure, a file stored at:
+
+```text
+homeless/index.html
+```
+
+can be reached at:
+
+```text
+https://www.vervenveda.com/homeless
+```
+
+---
+
+## Editing the Navigation
+
+The landing page keeps its destinations in one JavaScript array near the bottom of `index.html`.
+
+Example:
+
+```javascript
+const destinations = [
+  {
+    title: "Homeless Hub",
+    path: "/homeless",
+    category: "Resources",
+    description: "National resources, services, and pathways toward stability."
+  }
+];
+```
+
+To add a destination:
+
+1. Create a route folder containing its own `index.html`.
+2. Add a new object to the `destinations` array.
+3. Add the destination to the `featured` array only when it should appear as a featured gateway.
+4. Commit and publish the changes.
+
+The directory and hamburger menu will update automatically.
 
 ---
 
 ## Running Locally
 
-Because the tools are static HTML apps, most can be opened directly in a browser.
+The site can usually be opened directly by selecting `index.html` in a browser.
 
-1. Download or clone the repository.
-2. Open the desired `index.html` file in a modern browser.
-3. Use the app locally.
-
-For a local development server, you can use any simple static server. For example:
+For local testing through a simple web server:
 
 ```bash
 python3 -m http.server 8080
 ```
 
-Then open:
+Then visit:
 
 ```text
 http://localhost:8080
 ```
 
+A local server is recommended when testing route folders, browser security behavior, or features that do not run reliably from a `file://` address.
+
 ---
 
-## Deployment
+## Publishing with GitHub Pages
 
-This project can be deployed as a static website.
+1. Place the landing page at the repository root as `index.html`.
+2. Place each destination inside its matching route folder.
+3. Open the repository's **Settings**.
+4. Select **Pages**.
+5. Publish from the intended branch and root folder.
+6. Add the custom domain `www.vervenveda.com` in GitHub Pages settings.
+7. Confirm the required DNS records with the domain provider.
+8. Enable HTTPS after GitHub verifies the domain.
 
-Recommended hosting options:
-
-- Cloudflare Pages
-- Netlify
-- GitHub Pages
-- Other static hosting providers
-
-A clean deployment structure could look like:
+A `CNAME` file may be maintained at the repository root with:
 
 ```text
-vervenveda.com/
-vervenveda.com/apps/homeless-hub/
-vervenveda.com/apps/family-resource-hub/
-vervenveda.com/apps/arshif-atlas/
+www.vervenveda.com
 ```
 
 ---
 
 ## Resource Review Standard
 
-Verve N Veda resource hubs should prioritize trusted, durable pathways such as:
+Public resource hubs should prioritize durable and accountable pathways, including:
 
-- Official government resources
-- Public health and safety agencies
-- National nonprofit resource locators
-- Crisis hotlines and established support networks
-- Legal aid and benefit navigators
-- Educational institutions and public learning resources
+- Official government agencies
+- Public health and safety organizations
+- Established nonprofit resource locators
+- Crisis and support hotlines
+- Legal-aid and benefit-navigation services
+- Educational institutions
+- Libraries, archives, and public learning resources
 
-When possible, each resource should be reviewed for:
+Whenever possible, resources should be reviewed for:
 
 - Accuracy
+- Availability
 - Accessibility
-- National or local relevance
-- Clear contact path
+- Geographic relevance
+- Clear contact information
 - Privacy and safety considerations
-- Last-known availability
+- Date of last review
+
+A listed resource is not automatically an endorsement of every statement, policy, or service offered by the linked organization.
 
 ---
 
 ## Safety Notice
 
-Verve N Veda tools are educational and informational. They are not a substitute for emergency services, legal advice, medical care, crisis counseling, law enforcement, professional case management, or direct support from qualified providers.
+Verve N Veda tools are educational and informational. They are not substitutes for emergency services, medical care, legal advice, crisis counseling, law enforcement, or professional case management.
 
-If someone is in immediate danger, they should contact local emergency services or an appropriate crisis hotline in their area.
+A person in immediate danger should contact local emergency services or an appropriate verified crisis service in their location.
+
+Resource availability can change. Visitors should confirm time-sensitive details directly with the responsible organization.
 
 ---
 
 ## Privacy Notice
 
-The core Verve N Veda apps are designed to run locally in the browser. When a tool uses browser storage, saved information remains on the user’s device unless the user chooses to export, copy, clear, or share it.
+Core Verve N Veda applications are designed to function locally in the browser whenever practical.
 
-Future contributors should avoid adding analytics, trackers, third-party scripts, or server-based data collection unless the change is clearly documented, optional, privacy-preserving, and approved by the project maintainer.
+When a tool uses browser storage, saved information remains on the user's device unless the user chooses to export, copy, clear, or share it. Contributors should avoid adding analytics, advertising trackers, fingerprinting, unnecessary third-party scripts, or server-side collection of personal information.
+
+Any future feature that transmits or stores user information should be:
+
+- Necessary
+- Clearly disclosed
+- Purpose-limited
+- Securely designed
+- Optional whenever possible
+- Reviewed before deployment
 
 ---
 
 ## Accessibility Goals
 
-The project aims to support:
+Verve N Veda aims to support:
 
-- Mobile-friendly layouts
-- Clear navigation
+- Semantic page structure
+- Keyboard navigation
+- Visible focus indicators
+- Screen-reader-friendly labels
 - Strong text contrast
-- Large tap targets
-- Keyboard-accessible controls
+- Responsive text and layouts
+- Large touch targets
+- Reduced-motion preferences
 - Plain-language instructions
 - Printable and saveable resources
 
-Accessibility improvements are welcome.
+Accessibility improvements and careful testing are welcome.
 
 ---
 
 ## Contributing
 
-Contributions should support the mission of dignity, safety, education, and access. Helpful contributions may include:
+Contributions should strengthen dignity, safety, education, accessibility, creativity, and public usefulness.
 
-- Updating resource links
-- Improving mobile layouts
-- Enhancing accessibility
-- Adding printable checklists
+Helpful contributions may include:
+
+- Repairing broken links
+- Updating public resources
+- Improving keyboard or screen-reader access
+- Strengthening mobile layouts
 - Reviewing safety language
-- Creating new local-first tools
-- Fixing bugs
+- Adding printable materials
+- Correcting factual errors
 - Improving documentation
+- Building new privacy-respecting tools
+- Testing pages across browsers and devices
 
-Please avoid adding features that collect sensitive personal information, encourage surveillance, make accusations about individuals, or create barriers for vulnerable users.
+Please do not add features that:
+
+- Collect unnecessary sensitive information
+- Introduce hidden tracking or surveillance
+- Make unsupported accusations about individuals
+- Create barriers for vulnerable visitors
+- Depend on inaccessible or proprietary systems without a clear reason
+- Quietly transmit local user content to third parties
 
 ---
 
-## Related Sites
+## Security
 
-- **Verve N Veda:** VervenVeda.com
-- **Khaemenes Academy:** KhaemenesAcademy.org
+Potential security or privacy concerns should be handled according to `SECURITY.md`.
+
+Do not publish sensitive vulnerability details in a public issue before the maintainer has had a reasonable opportunity to review them.
 
 ---
 
 ## Maintainer
 
-Created and maintained by **Jennifer Pearl** as part of the Verve N Veda and Khaemenes Academy public resource ecosystem.
+Created and maintained by **Jennifer Pearl** as part of the Verve N Veda and Khaemenes Academy public-resource and learning ecosystem.
 
 ---
 
 ## License
 
-Add the project license here, or see `LICENSE.md` if included in this repository.
+Use of this repository is governed by the terms in [`LICENSE.md`](LICENSE.md).
 
-Suggested options depend on the project’s goals:
-
-- Use an open-source license for code if you want others to reuse and improve the apps.
-- Use a Creative Commons license for written educational content if you want controlled public sharing.
-- Use a custom license if you want public access while preserving stronger stewardship and attribution requirements.
+Third-party materials, when present, should be documented in [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
 
 ---
 
 ## Closing Statement
 
-Verve N Veda is built for people who need a calm place to begin. Whether someone is seeking shelter, supporting a child, protecting a family member from an online scam, or looking for trustworthy educational resources, this project is designed to offer a clear first step.
+Verve N Veda is built as a calm place to begin.
 
-**Pause. Learn. Verify. Find support. Move forward with dignity.**
+Whether a visitor is seeking support, learning something new, verifying information, protecting a family member, exploring civic life, building a creative practice, or simply searching for a clearer path forward, the purpose remains the same:
+
+> **Offer a trustworthy first step, preserve human dignity, and leave the door open for discovery.**
