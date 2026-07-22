@@ -290,7 +290,7 @@
     <div class="section-inner">
       <div class="section-heading reveal">
         <div><p class="kicker">Begin here</p><h2 id="featuredTitle">Featured gateways</h2></div>
-        <p class="section-intro">Start with the spaces visitors usually need first: learning, research, practical resources, and source-aware discovery.</p>
+        <p class="section-intro">Start with the spaces visitors usually need first: early learning, academy pathways, source-aware discovery, and creative practice.</p>
       </div>
       <div class="featured-grid" id="featuredGrid"></div>
     </div>
@@ -320,10 +320,12 @@
       <div class="partner-panel reveal">
         <p class="kicker">Connected worlds</p>
         <h2 id="partnersTitle">Continue the journey</h2>
-        <p>Visit the campaign and academy portals that extend the Verve N Veda ecosystem into civic leadership and sovereign education.</p>
+        <p>Open the primary public websites connected to Verve N Veda, Khaemenes Academy, civic leadership, and the art gallery.</p>
         <div class="partner-links">
-          <a class="partner-link" href="https://www.jenniferpearl2028.com" target="_blank" rel="noopener noreferrer"><span><strong>Jennifer Pearl 2028</strong><small>Leadership · Civic vision · Public service</small></span><span aria-hidden="true">↗</span></a>
+          <a class="partner-link" href="https://www.vervenveda.com" target="_blank" rel="noopener noreferrer"><span><strong>VerveN Veda</strong><small>Public sanctuary · Learning · Resources</small></span><span aria-hidden="true">↗</span></a>
           <a class="partner-link" href="https://www.khaemenesacademy.org" target="_blank" rel="noopener noreferrer"><span><strong>Khaemenes Academy</strong><small>Learning · Creativity · Sovereign education</small></span><span aria-hidden="true">↗</span></a>
+          <a class="partner-link" href="https://www.jenniferpearl2028.com" target="_blank" rel="noopener noreferrer"><span><strong>Jennifer Pearl 2028</strong><small>Leadership · Civic vision · Public service</small></span><span aria-hidden="true">↗</span></a>
+          <a class="partner-link" href="https://myartgallery.online" target="_blank" rel="noopener noreferrer"><span><strong>My Art Gallery</strong><small>Art · Portfolio · Creative showcase</small></span><span aria-hidden="true">↗</span></a>
         </div>
       </div>
       <div class="principles reveal" aria-label="Site principles">
@@ -363,23 +365,41 @@
 const SITE_ROOT = "https://vervenveda.github.io/";
 
 const destinations = [
-  { title:"Verve N Veda", repo:"vervenveda.github.io", path:"https://vervenveda.github.io/", category:"Welcome", description:"The public front door to the Verve N Veda ecosystem, its projects, values, and shared resources." },
-  { title:"Firmament Law", repo:"firmament.github.io", path:"https://vervenveda.github.io/firmament.github.io/", category:"Law & Resources", description:"Legal-information tools, evidence workspaces, public-resource libraries, and civic reference applications." },
-  { title:"Administration", repo:"admin.github.io", path:"https://vervenveda.github.io/admin.github.io/", category:"Administration", description:"Administrative portals, organization tools, records, planning spaces, and operational resources." },
-  { title:"Arcade", repo:"arcade.github.io", path:"https://vervenveda.github.io/arcade.github.io/", category:"Play & Discovery", description:"Games, puzzles, strategy, trivia, creative challenges, and learning through thoughtful play." },
-  { title:"Professional Resource Hub", repo:"proresource_hub.github.io", path:"https://vervenveda.github.io/proresource_hub.github.io/", category:"Professional Tools", description:"Practical tools, professional development resources, planning support, and independent-work pathways." },
-  { title:"Preschool", repo:"preschool.github.io", path:"https://vervenveda.github.io/creche_preschool.github.io/", category:"Early Learning", description:"A gentle early-learning portal with foundational activities, stories, games, and creative exploration." },
-  { title:"One Nation for All", repo:"onenationforall.github.io", path:"https://vervenveda.github.io/onenationforall.github.io/", category:"Civic Life", description:"Civic engagement, public policy, unity, accountability, and community-centered national ideas." },
-  { title:"Solanar", repo:"solanar.github.io", path:"https://vervenveda.github.io/solanar.github.io/", category:"Earth & Sky", description:"Weather, earth science, environmental awareness, lunar information, and global observation tools." },
-  { title:"Khaemenes Academy", repo:"khaemenesacademy.github.io", path:"https://vervenveda.github.io/khaemenesacademy.github.io/", category:"Learning", description:"Sovereign education portals, curriculum, student resources, research, and lifelong learning halls." },
-  { title:"The Verifier", repo:"theverifier.github.io", path:"https://vervenveda.github.io/theverifier.github.io/", category:"News & Verification", description:"Information literacy, news discovery, source comparison, verification, and research navigation." },
-  { title:"ARSHIF Archives", repo:"Arshif.github.io", path:"https://vervenveda.github.io/Arshif.github.io/", category:"Research & Archives", description:"Deep research, archives, evidence preservation, cultural records, and intellectual collections." },
-  { title:"River to Road", repo:"river_to_road.github.io", path:"https://vervenveda.github.io/river_to_road.github.io/", category:"Environment", description:"Environmental stewardship, community cleanup, local action, and river-to-neighborhood restoration." },
-  { title:"PLERA Search", repo:"PLERASearch.github.io", path:"https://vervenveda.github.io/PLERASearch.github.io/", category:"Search & Discovery", description:"A broad search gateway connecting trusted research, public resources, learning, and discovery tools." },
-  { title:"Sanctuary", repo:"Sanctuary.github.io", path:"https://vervenveda.github.io/Sanctuary.github.io/", category:"Reflection & Wellbeing", description:"A quiet digital sanctuary for reflection, grounding, creativity, restoration, and personal space." }
+  { title:"Verve N Veda", repo:"vervenveda.github.io", path:"https://vervenveda.github.io/", category:"Welcome", description:"The GitHub Pages front door for the Verve N Veda ecosystem." },
+  { title:"VerveN Veda Main Site", repo:"www.vervenveda.com", path:"https://www.vervenveda.com", category:"Welcome", description:"The public Verve N Veda website and sanctuary doorway." },
+
+  { title:"Creche Preschool", repo:"creche_preschool.github.io", path:"https://vervenveda.github.io/creche_preschool.github.io/", category:"Early Learning", description:"A gentle preschool portal for early stories, games, creativity, and foundational learning." },
+  { title:"Kinder Garden", repo:"KinderGarden.github.io", path:"https://vervenveda.github.io/KinderGarden.github.io/", category:"Early Learning", description:"Kindergarten learning pathways, alphabet work, early reading, and playful foundations." },
+  { title:"Khaemenes Elementary", repo:"Khaemenes-elementary.github.io", path:"https://vervenveda.github.io/Khaemenes-elementary.github.io/", category:"Early Learning", description:"Elementary learning spaces, lessons, tools, and child-friendly portals." },
+
+  { title:"Khaemenes Academy", repo:"khaemenesacademy.github.io", path:"https://vervenveda.github.io/khaemenesacademy.github.io/", category:"Academy", description:"The academy portal for curriculum, student resources, research, and lifelong learning halls." },
+  { title:"Khaemenes Academy .org", repo:"www.khaemenesacademy.org", path:"https://www.khaemenesacademy.org", category:"Academy", description:"The public Khaemenes Academy website." },
+  { title:"Khaemenes Jr High", repo:"Khaemenes-jrhigh.github.io", path:"https://vervenveda.github.io/Khaemenes-jrhigh.github.io/", category:"Academy", description:"Junior high learning portals, reading, projects, and student tools." },
+  { title:"Khaemenes High School", repo:"Khaemenes-High_github.io", path:"https://vervenveda.github.io/Khaemenes-High_github.io/", category:"Academy", description:"High school learning portals, workshops, curriculum pathways, and academic tools." },
+  { title:"Khaemenes University", repo:"Khaemenes-university.github.io", path:"https://vervenveda.github.io/Khaemenes-university.github.io/", category:"Academy", description:"Advanced learning, adult education, research, and university-style study portals." },
+
+  { title:"The Verifier", repo:"theverifier.github.io", path:"https://vervenveda.github.io/theverifier.github.io/", category:"Research & Verification", description:"Information literacy, news discovery, source comparison, verification, and research navigation." },
+  { title:"PLERA Search", repo:"PLERASearch.github.io", path:"https://vervenveda.github.io/PLERASearch.github.io/", category:"Research & Verification", description:"A search gateway connecting public resources, research paths, educational tools, and discovery spaces." },
+  { title:"ARSHIF Archives", repo:"Arshif.github.io", path:"https://vervenveda.github.io/Arshif.github.io/", category:"Research & Verification", description:"Deep research, archives, evidence preservation, cultural records, and intellectual collections." },
+  { title:"Aurora", repo:"aurora.github.io", path:"https://vervenveda.github.io/aurora.github.io/", category:"Research & Verification", description:"A reflective research and discovery space within the Verve N Veda network." },
+  { title:"Linguistics", repo:"linguistics.github.io", path:"https://vervenveda.github.io/linguistics.github.io/", category:"Research & Verification", description:"Language learning, word study, communication, and linguistics resources." },
+
+  { title:"Bazaar Art", repo:"bazaarart.github.io", path:"https://vervenveda.github.io/bazaarart.github.io/", category:"Art & Creativity", description:"Creative practice, art resources, artist pathways, and community art spaces." },
+  { title:"My Art Gallery", repo:"myartgallery.github.io", path:"https://vervenveda.github.io/myartgallery.github.io/", category:"Art & Creativity", description:"Gallery tools, art portfolios, creative showcases, and visual-art resources." },
+  { title:"My Art Gallery Online", repo:"myartgallery.online", path:"https://myartgallery.online", category:"Art & Creativity", description:"The public online art-gallery doorway." },
+  { title:"Arcade", repo:"arcade.github.io", path:"https://vervenveda.github.io/arcade.github.io/", category:"Art & Creativity", description:"Games, puzzles, strategy, trivia, creative challenges, and learning through play." },
+
+  { title:"River to Road", repo:"river_to_road.github.io", path:"https://vervenveda.github.io/river_to_road.github.io/", category:"Earth & Community", description:"Environmental stewardship, community cleanup, local action, and river-to-neighborhood restoration." },
+  { title:"Solanar", repo:"solanar.github.io", path:"https://vervenveda.github.io/solanar.github.io/", category:"Earth & Community", description:"Weather, earth science, environmental awareness, lunar information, and observation tools." },
+  { title:"One Nation for All", repo:"onenationforall.github.io", path:"https://vervenveda.github.io/onenationforall.github.io/", category:"Earth & Community", description:"Civic engagement, unity, accountability, public policy, and community-centered national ideas." },
+  { title:"Jennifer Pearl 2028", repo:"JenniferPearl2028.com", path:"https://www.jenniferpearl2028.com", category:"Earth & Community", description:"Leadership, civic vision, public service, and national campaign information." },
+
+  { title:"Professional Resource Hub", repo:"proresource_hub.github.io", path:"https://vervenveda.github.io/proresource_hub.github.io/", category:"Practical Resources", description:"Professional development, planning support, independent-work tools, and practical pathways." },
+  { title:"Administration", repo:"admin.github.io", path:"https://vervenveda.github.io/admin.github.io/", category:"Practical Resources", description:"Administrative portals, organization tools, records, planning spaces, and operational resources." },
+  { title:"Firmament Law", repo:"firmament.github.io", path:"https://vervenveda.github.io/firmament.github.io/", category:"Practical Resources", description:"Legal-information tools, evidence workspaces, public-resource libraries, and civic reference applications." }
 ];
 
-const featured = ["The Verifier","Khaemenes Academy","Firmament Law","PLERA Search"].map(title => destinations.find(item => item.title === title)).filter(Boolean);
+const featured = ["Khaemenes Academy","The Verifier","Creche Preschool","My Art Gallery"].map(title => destinations.find(item => item.title === title)).filter(Boolean);
 
 const directoryGrid = document.getElementById("directoryGrid");
 const featuredGrid = document.getElementById("featuredGrid");
